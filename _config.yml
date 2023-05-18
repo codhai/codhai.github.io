@@ -1,35 +1,34 @@
-title: Your Title
-description: > # this means to ignore newlines until "baseurl:"
-  Your description
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "codhai.github.io" # the base hostname & protocol for your site
-# Build settings
-markdown: kramdown
-
-facebook:
-  app_id: 
-
-logo: "../css/2016_style/img/icon-large.png"
-
-social: 
-  name: Your Facebook Page
-  link: "https://www.facebook.com/"
-
-google_site_verification: googleXXXXXXXXXXXXXXXX.html
-
-include: ['_2016_pages', '_2017_pages']
-
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: facebook
-    url: https://www.facebook.com
-  - title: twitter
-    url: https://twitter.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+plugins:
+  - jekyll-sitemap
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
+
+# Pages Path
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+sass:
+  sass_dir: assets/scss
+  style: compressed
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.text
+  - README.md
+  - SECURITY.md
