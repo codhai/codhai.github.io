@@ -246,7 +246,7 @@ portfolio-items:
 
 testimonial-items:
   - name: "Jesica Gomez"
-    image: "assets/images/about/auther.png"
+    image: "assets/images/about/author.png"
     designation: "CEO, Funder"
     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, 
     <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> 
